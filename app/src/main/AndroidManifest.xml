@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cestadefrutas.mega">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mega">
+        <activity android:name=".activities.FirstQuestion" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.EighthQuestion" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.SeventhQuestion" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.SixthQuestion" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.FifhtQuestion" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.FourthQuestion" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.ThirdQuestion" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.ResultScreen" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.SecondQuestion" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

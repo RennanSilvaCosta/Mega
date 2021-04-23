@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Mega</string>
+
+    //first question
+    <string name="first_question">Quantas televisões com acesso a internet você tem?</string>
+
+    //alternativas
+    <string name="first_question_first_alternative">Nenhuma</string>
+    <string name="first_question_second_alternative">1 Televisão</string>
+    <string name="first_question_third_alternative">2 Televisões</string>
+    <string name="first_question_fourth_alternative">3 Televisões</string>
+    <string name="first_question_fifth_alternative">Mais de 3 televisões</string>
+
+    /second question
+    <string name="second_question">Quantos Video Games com acesso a internet você tem?</string>
+
+    //alternativas
+    <string name="second_question_first_alternative">Nenhum</string>
+    <string name="second_question_second_alternative">1 Video Game</string>
+    <string name="second_question_third_alternative">2 Video Games</string>
+    <string name="second_question_fourth_alternative">3 Video Games</string>
+    <string name="second_question_fifth_alternative">Mais de 3 Video Games</string>
+
+    //third question
+    <string name="third_question">Quantos celulares com acesso a internet você tem?</string>
+
+    //alternativas
+    <string name="third_question_first_alternative">Nenhum</string>
+    <string name="third_question_second_alternative">1 Celular</string>
+    <string name="third_question_third_alternative">2 Celulares</string>
+    <string name="third_question_fourth_alternative">3 Celulares</string>
+    <string name="third_question_fifth_alternative">Mais de 3 Celulares</string>
+
+    //fourth question
+    <string name="fourth_question">Quantos computadores com acesso a internet você tem?</string>
+
+    //alternativas
+    <string name="fourth_question_first_alternative">Nenhum</string>
+    <string name="fourth_question_second_alternative">1 Computador</string>
+    <string name="fourth_question_third_alternative">2 Computadores</string>
+    <string name="fourth_question_fourth_alternative">3 Computadores</string>
+    <string name="fourth_question_fifth_alternative">Mais de 3 Computadores</string>
+
+    //fourth question
+    <string name="fifth_question">Quantas máquininhas de cartão com acesso a internet você tem?</string>
+
+    //alternativas
+    <string name="fifth_question_first_alternative">Nenhuma</string>
+    <string name="fifth_question_second_alternative">1 Maquininha</string>
+    <string name="fifth_question_third_alternative">2 Maquininhas</string>
+    <string name="fifth_question_fourth_alternative">3 Maquininhas</string>
+    <string name="fifth_question_fifth_alternative">Mais de 3 Maquininhas</string>
+
+    //fourth question
+    <string name="sixth_question">Quantos cômodos tem a sua casa?</string>
+
+    //alternativas
+    <string name="sixth_question_first_alternative">1 cômodo</string>
+    <string name="sixth_question_second_alternative">2 cômodos</string>
+    <string name="sixth_question_third_alternative">3 cômodos</string>
+    <string name="sixth_question_fourth_alternative">4 cômodos</string>
+    <string name="sixth_question_fifth_alternative">mais de 4 cômodos</string>
+
+    //fourth question
+    <string name="seventh_question">Quantos andares tem a sua casa?</string>
+
+    //alternativas
+    <string name="seventh_question_first_alternative">1 andar</string>
+    <string name="seventh_question_second_alternative">2 andares</string>
+    <string name="seventh_question_third_alternative">3 andares</string>
+    <string name="seventh_question_fourth_alternative">mais de 3 andares</string>
+
+    /fourth question
+    <string name="eighth_question">Você usa a internet mais para:</string>
+
+    //alternativas
+    <string name="eighth_question_first_alternative">Home Office</string>
+    <string name="eighth_question_second_alternative">Gamer</string>
+    <string name="eighth_question_third_alternative">Streming</string>
+    <string name="eighth_question_fourth_alternative">Youtube lives</string>
+    <string name="eighth_question_fifth_alternative">Comercio</string>
+
+
+</resources>

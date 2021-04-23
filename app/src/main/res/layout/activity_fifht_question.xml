@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_degrade"
+    tools:context=".activities.FifhtQuestion">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/fifth_question"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/fifth_qtd0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/design_default_color_primary"
+            android:checked="true"
+            android:text="@string/fifth_question_first_alternative"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorLink="@color/purple_200"
+            android:textColor="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/fifth_qtd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/design_default_color_primary"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/fifth_question_second_alternative"
+            android:textColor="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/fifth_qtd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/design_default_color_primary"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/fifth_question_third_alternative"
+            android:textColor="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/fifth_qtd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/design_default_color_primary"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/fifth_question_fourth_alternative"
+            android:textColor="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/fifth_qtdMais3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/design_default_color_primary"
+            android:buttonTintMode="src_in"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/fifth_question_fifth_alternative"
+            android:textColor="#FFFFFF"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/fifth_btnNext"
+        android:layout_width="302dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="proximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
