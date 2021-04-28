@@ -79,6 +79,10 @@ public class AdapterAnswer extends RecyclerView.Adapter<AdapterAnswer.MyViewHold
             holder.txtQuantidade.setText("Perfil selecionado: " + resposta.getKey());
             holder.txtMega.setText("Quantidade de megas sugerido para o perfil: " + resposta.getValue());
             holder.imgKey.setImageResource(R.drawable.icon_perfil_comercio);
+        }else if (resposta.getKey().equals("Redes Sociais")) {
+            holder.txtQuantidade.setText("Perfil selecionado: " + resposta.getKey());
+            holder.txtMega.setText("Quantidade de megas sugerido para o perfil: " + resposta.getValue());
+            holder.imgKey.setImageResource(R.drawable.icon_rede_sociais);
         }
     }
 

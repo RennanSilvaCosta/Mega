@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.cestadefrutas.mega.R;
 import com.cestadefrutas.mega.adapter.AdapterAnswer;
 import com.cestadefrutas.mega.model.Answer;
+import com.cestadefrutas.mega.util.Constantes;
 import com.robinhood.ticker.TickerUtils;
 import com.robinhood.ticker.TickerView;
 
@@ -57,7 +57,7 @@ public class ResultScreen extends AppCompatActivity {
         btnReiniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultScreen.this, FirstQuestion.class);
+                Intent intent = new Intent(ResultScreen.this, Questions.class);
                 startActivity(intent);
                 finish();
             }
@@ -91,76 +91,77 @@ public class ResultScreen extends AppCompatActivity {
             Answer resposta = new Answer();
             resposta.setKey("televisao");
             resposta.setValue(televisao);
-            total += televisao * 15;
+            total += televisao * Constantes.QUANTIDADE_MEGA_PARA_TELEVISAO;
             listaResposta.add(resposta);
         }
         if (videoGame > 0) {
             Answer resposta = new Answer();
             resposta.setKey("videoGame");
             resposta.setValue(videoGame);
-            total += videoGame * 15;
+            total += videoGame * Constantes.QUANTIDADE_MEGA_PARA_VIDEOGAME;
             listaResposta.add(resposta);
         }
         if (celular > 0) {
             Answer resposta = new Answer();
             resposta.setKey("celular");
             resposta.setValue(celular);
-            total += celular * 8;
+            total += celular * Constantes.QUANTIDADE_MEGA_PARA_CELULAR;
             listaResposta.add(resposta);
         }
         if (computador > 0) {
             Answer resposta = new Answer();
             resposta.setKey("computador");
             resposta.setValue(computador);
-            total += computador * 10;
+            total += computador * Constantes.QUANTIDADE_MEGA_PARA_COMPUTADOR;
             listaResposta.add(resposta);
         }
         if (maquina > 0) {
             Answer resposta = new Answer();
             resposta.setKey("maquina");
             resposta.setValue(maquina);
-            total += maquina * 3;
+            total += maquina * Constantes.QUANTIDADE_MEGA_PARA_MAQUINA;
             listaResposta.add(resposta);
         }
     }
 
     private void setMegaToPerfil() {
         txtPerfil.setText("Perfil: " + perfil);
-
-        //Perfil home office + 35 mega
         if (perfil.equals("Home Office")){
             Answer resposta = new Answer();
             resposta.setKey("Home Office");
-            resposta.setValue(35);
-            total += 35;
+            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_HOMEOFFICE);
+            total += Constantes.QUANTIDADE_MEGA_PARA_HOMEOFFICE;
             listaResposta.add(resposta);
-        //Perfil gamer + 50 mega
         } else if (perfil.equals("Gamer")) {
             Answer resposta = new Answer();
             resposta.setKey("Gamer");
-            resposta.setValue(50);
-            total += 50;
+            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_GAMES);
+            total += Constantes.QUANTIDADE_MEGA_PARA_GAMES;
             listaResposta.add(resposta);
-        //Perfil streaming + 30 mega
         } else if (perfil.equals("Casual")) {
             Answer resposta = new Answer();
             resposta.setKey("Casual");
-            resposta.setValue(30);
-            total += 30;
+            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_REDE_SOCIAIS);
+            total += Constantes.QUANTIDADE_MEGA_PARA_REDE_SOCIAIS;
             listaResposta.add(resposta);
-        //Perfil YouTube lives + 70 mega
         } else if (perfil.equals("Stremer")) {
             Answer resposta = new Answer();
             resposta.setKey("Stremer");
-            resposta.setValue(70);
-            total += 70;
+            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_STREMAR);
+            total += Constantes.QUANTIDADE_MEGA_PARA_STREMAR;
             listaResposta.add(resposta);
-        //Perfil YouTube lives + 70 mega
         } else if (perfil.equals("Comerciante")) {
             Answer resposta = new Answer();
             resposta.setKey("Comerciante");
-            resposta.setValue(15);
-            total += 15;
+            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_COMERCIANTE);
+            total += Constantes.QUANTIDADE_MEGA_PARA_COMERCIANTE;
+            listaResposta.add(resposta);
+        }
+        else if (perfil.equals("Redes Sociais")) {
+            Answer resposta = new Answer();
+            resposta.setKey("Redes Sociais");
+            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_REDE_SOCIAIS);
+            total += Constantes.QUANTIDADE_MEGA_PARA_REDE_SOCIAIS;
             listaResposta.add(resposta);
         }
     }
