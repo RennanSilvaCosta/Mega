@@ -31,12 +31,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:forceDarkAllowed="true"
-        android:text="Calculadora de Megas"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/title"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:forceDarkAllowed="true"
-        android:text="Calcule a quantidade de megas que seu cliente precisa"
+        android:text="@string/subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />

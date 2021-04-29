@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Mega</string>
+    <string name="title">Calculadora de Megas</string>
+    <string name="subtitle">Calcule a quantidade de megas que seu cliente precisa</string>
 
     //first question
     <string name="first_question">Quantas televisões você tem?</string>

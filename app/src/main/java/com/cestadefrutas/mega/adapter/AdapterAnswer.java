@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.cestadefrutas.mega.R;
 import com.cestadefrutas.mega.model.Answer;
+import com.cestadefrutas.mega.util.Constantes;
 
 import java.util.List;
 
@@ -37,23 +38,23 @@ public class AdapterAnswer extends RecyclerView.Adapter<AdapterAnswer.MyViewHold
         Answer resposta = respostas.get(position);
         if (resposta.getKey().equals("televisao")) {
             holder.txtQuantidade.setText("Quantidade de televisões informada: " + resposta.getValue());
-            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * 15));
+            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * Constantes.QUANTIDADE_MEGA_PARA_TELEVISAO));
             holder.imgKey.setImageResource(R.drawable.icon_smarttv);
         } else if (resposta.getKey().equals("videoGame")) {
             holder.txtQuantidade.setText("Quantidade de video games informada: " + resposta.getValue());
-            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * 15));
+            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * Constantes.QUANTIDADE_MEGA_PARA_VIDEOGAME));
             holder.imgKey.setImageResource(R.drawable.icon_controle_videogame);
         } else if (resposta.getKey().equals("celular")) {
             holder.txtQuantidade.setText("Quantidade de celulares informada: " + resposta.getValue());
-            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * 8));
+            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * Constantes.QUANTIDADE_MEGA_PARA_CELULAR));
             holder.imgKey.setImageResource(R.drawable.icon_smartphone);
         } else if (resposta.getKey().equals("computador")) {
             holder.txtQuantidade.setText("Quantidade de computadores informada: " + resposta.getValue());
-            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * 10));
+            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * Constantes.QUANTIDADE_MEGA_PARA_COMPUTADOR));
             holder.imgKey.setImageResource(R.drawable.icon_computador);
         } else if (resposta.getKey().equals("maquina")) {
             holder.txtQuantidade.setText("Quantidade de maquininhas informada: " + resposta.getValue());
-            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * 3));
+            holder.txtMega.setText("Quantidade de megas sugerido: " + (resposta.getValue() * Constantes.QUANTIDADE_MEGA_PARA_MAQUINA));
             holder.imgKey.setImageResource(R.drawable.icon_maquininha);
         } else if (resposta.getKey().equals("roteador")) {
             holder.txtQuantidade.setText("Um roteador adicional pode ser necessário!");
