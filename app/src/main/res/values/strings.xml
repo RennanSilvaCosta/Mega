@@ -3,6 +3,15 @@
     <string name="title">Calculadora de Megas</string>
     <string name="subtitle">Calcule a quantidade de megas que seu cliente precisa</string>
 
+    //buttons
+    <string name="btn_main_screen">Iniciar</string>
+    <string name="btn_question_screen">calcular</string>
+    <string name="btn_result_screen">iniciar</string>
+    
+    //text fixed in result screen
+    <string name="txt_result_mega">Megas sugeridos</string>
+    <string name="txt_not_found_devices">Nenhum aparelho foi informado</string>
+
     //first question
     <string name="first_question">Quantas televisões você tem?</string>
 
