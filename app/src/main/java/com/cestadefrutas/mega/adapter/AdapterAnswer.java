@@ -60,30 +60,6 @@ public class AdapterAnswer extends RecyclerView.Adapter<AdapterAnswer.MyViewHold
             holder.txtQuantidade.setText("Um roteador adicional pode ser necessário!");
             holder.txtMega.setText("Comodos: " + resposta.getValue() + " Andares: " + resposta.getSecondValue());
             holder.imgKey.setImageResource(R.drawable.icon_roteador);
-        } else if (resposta.getKey().equals("Home Office")) {
-            holder.txtQuantidade.setText("Perfil selecionado: " + resposta.getKey());
-            holder.txtMega.setText("Quantidade de megas sugerido para o perfil: " + resposta.getValue());
-            holder.imgKey.setImageResource(R.drawable.icon_perfil_home_office);
-        } else if (resposta.getKey().equals("Gamer")) {
-            holder.txtQuantidade.setText("Perfil selecionado: " + resposta.getKey());
-            holder.txtMega.setText("Quantidade de megas sugerido para o perfil: " + resposta.getValue());
-            holder.imgKey.setImageResource(R.drawable.icon_perfil_gamer);
-        } else if (resposta.getKey().equals("Casual")) {
-            holder.txtQuantidade.setText("Perfil selecionado: " + resposta.getKey());
-            holder.txtMega.setText("Quantidade de megas sugerido para o perfil: " + resposta.getValue());
-            holder.imgKey.setImageResource(R.drawable.icon_perfil_streaming);
-        } else if (resposta.getKey().equals("Stremer")) {
-            holder.txtQuantidade.setText("Perfil selecionado: " + resposta.getKey());
-            holder.txtMega.setText("Quantidade de megas sugerido para o perfil: " + resposta.getValue());
-            holder.imgKey.setImageResource(R.drawable.icon_perfil_lives);
-        } else if (resposta.getKey().equals("Comerciante")) {
-            holder.txtQuantidade.setText("Perfil selecionado: " + resposta.getKey());
-            holder.txtMega.setText("Quantidade de megas sugerido para o perfil: " + resposta.getValue());
-            holder.imgKey.setImageResource(R.drawable.icon_perfil_comercio);
-        } else if (resposta.getKey().equals("Redes Sociais")) {
-            holder.txtQuantidade.setText("Perfil selecionado: " + resposta.getKey());
-            holder.txtMega.setText("Quantidade de megas sugerido para o perfil: " + resposta.getValue());
-            holder.imgKey.setImageResource(R.drawable.icon_rede_sociais);
         }
     }
 

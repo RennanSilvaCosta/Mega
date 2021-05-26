@@ -12,8 +12,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.cestadefrutas.mega.R;
 import com.cestadefrutas.mega.adapter.AdapterAnswer;
+import com.cestadefrutas.mega.adapter.AdapterPerfil;
 import com.cestadefrutas.mega.model.Answer;
 import com.cestadefrutas.mega.util.Constantes;
+import com.github.islamkhsh.CardSliderViewPager;
 import com.robinhood.ticker.TickerUtils;
 import com.robinhood.ticker.TickerView;
 
@@ -53,6 +55,7 @@ public class ResultScreen extends AppCompatActivity {
 
         tickerView.setText(String.valueOf(total));
 
+        initializeCardSlider();
         initializeRecycler();
 
         btnReiniciar.setOnClickListener(new View.OnClickListener() {
@@ -127,6 +130,7 @@ public class ResultScreen extends AppCompatActivity {
 
     private void setMegaToPerfil() {
 
+
     }
 
     private void initializeComponents() {
@@ -135,6 +139,12 @@ public class ResultScreen extends AppCompatActivity {
         tickerView = findViewById(R.id.txtResult);
         tickerView.setAnimationDuration(1500);
         recyclerViewRespostas = findViewById(R.id.recyclerViewRespostas);
+    }
+
+    private void initializeCardSlider() {
+        CardSliderViewPager cardSliderViewPager = findViewById(R.id.cardSlider);
+        AdapterPerfil adapter = new AdapterPerfil(perfis);
+        cardSliderViewPager.setAdapter(adapter);
     }
 
     private void initializeRecycler() {
