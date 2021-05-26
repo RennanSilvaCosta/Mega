@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.NumberPicker;
 import android.widget.RadioButton;
 
@@ -15,13 +16,15 @@ import com.cestadefrutas.mega.R;
 import com.cestadefrutas.mega.util.Constantes;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Questions extends AppCompatActivity {
 
     private Button btnNext;
     private ArrayList<Integer> quantidades = new ArrayList<>();
     private int quantidadeTelevisao = 0, quantidadeVideogames = 0, quantidadeCelulares = 0, quantidadeComputadores = 0, quantidadeMaquinas = 0, quantidadeComodos = 0, quantidadeAndares = 0;
-    private String perfil = "Home Office";
+    private ArrayList<String> perfis = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +39,7 @@ public class Questions extends AppCompatActivity {
                 popularListQuantidade();
                 Intent i = new Intent(Questions.this, ResultScreen.class);
                 i.putIntegerArrayListExtra("quantidades", quantidades);
-                i.putExtra("perfil", perfil);
+                i.putStringArrayListExtra("perfis", perfis);
                 startActivity(i);
                 finish();
             }
@@ -63,25 +66,21 @@ public class Questions extends AppCompatActivity {
             case R.id.first_qtd0:
                 if (checked) {
                     quantidadeTelevisao = 0;
-                    Log.i("radio", "quantidade 0");
                 }
                 break;
             case R.id.first_qtd1:
                 if (checked) {
                     quantidadeTelevisao = 1;
-                    Log.i("radio", "quantidade 1");
                 }
                 break;
             case R.id.first_qtd2:
                 if (checked) {
                     quantidadeTelevisao = 2;
-                    Log.i("radio", "quantidade 2");
                 }
                 break;
             case R.id.first_qtd3:
                 if (checked) {
                     quantidadeTelevisao = 3;
-                    Log.i("radio", "quantidade 3");
                 }
                 break;
             case R.id.first_qtdMais3:
@@ -234,34 +233,60 @@ public class Questions extends AppCompatActivity {
                     showDialog("andar");
                 }
                 break;
-            case R.id.first_alternative:
+        }
+    }
+
+    public void onCheckboxClicked(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+        switch (view.getId()) {
+            case R.id.checkbox_homeoffice:
                 if (checked) {
-                    perfil = Constantes.PERFIL_HOMEOFFICE;
+                    perfis.add(Constantes.PERFIL_HOMEOFFICE);
+                } else {
+                    perfis.remove(perfis.indexOf(Constantes.PERFIL_HOMEOFFICE));
                 }
                 break;
-            case R.id.second_alternative:
+            case R.id.checkbox_gamer:
                 if (checked) {
-                    perfil = Constantes.PERFIL_GAMER;
+                    perfis.add(Constantes.PERFIL_GAMER);
+                } else {
+                    perfis.remove(perfis.indexOf(Constantes.PERFIL_GAMER));
                 }
                 break;
-            case R.id.third_alternative:
+            case R.id.checkbox_streming:
                 if (checked) {
-                    perfil = Constantes.PERFIL_CASUAL;
+                    perfis.add(Constantes.PERFIL_STREMING);
+
+                } else {
+                    perfis.remove(perfis.indexOf(Constantes.PERFIL_STREMING));
                 }
                 break;
-            case R.id.fourth_alternative:
+            case R.id.checkbox_stremer:
                 if (checked) {
-                    perfil = Constantes.PERFIL_STREMER;
+                    perfis.add(Constantes.PERFIL_STREMER);
+                } else {
+                    perfis.remove(perfis.indexOf(Constantes.PERFIL_STREMER));
                 }
                 break;
-            case R.id.fifth_alternative:
+            case R.id.checkbox_comercio:
                 if (checked) {
-                    perfil = Constantes.PERFIL_COMERCIANTE;
+                    perfis.add(Constantes.PERFIL_COMERCIANTE);
+                } else {
+                    perfis.remove(perfis.indexOf(Constantes.PERFIL_COMERCIANTE));
                 }
                 break;
-            case R.id.sixth_alternative:
+            case R.id.checkbox_redes_sociais:
                 if (checked) {
-                    perfil = Constantes.PERFIL_REDE_SOCIAIS;
+                    perfis.add(Constantes.PERFIL_REDE_SOCIAIS);
+                } else {
+                    perfis.remove(perfis.indexOf(Constantes.PERFIL_REDE_SOCIAIS));
+                }
+                break;
+            case R.id.checkbox_estudante:
+                if (checked) {
+                    perfis.add(Constantes.PERFIL_ESTUDANTE);
+                } else {
+                    perfis.remove(perfis.indexOf(Constantes.PERFIL_ESTUDANTE));
                 }
                 break;
         }

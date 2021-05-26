@@ -23,13 +23,14 @@ import java.util.List;
 public class ResultScreen extends AppCompatActivity {
 
     private ArrayList<Integer> quantidades = new ArrayList<>();
+    private ArrayList<String> perfis = new ArrayList<>();
     private TickerView tickerView;
     private Button btnReiniciar;
-    private TextView txtPerfil, txtNotFound;
+    private TextView txtNotFound;
     private List<Answer> listaResposta = new ArrayList<>();
     private RecyclerView recyclerViewRespostas;
     private AdapterAnswer adapterAnswer;
-    private String perfil;
+
     int televisao, videoGame, celular, computador, maquina, comodo, andar, total = 0;
 
     @Override
@@ -42,7 +43,7 @@ public class ResultScreen extends AppCompatActivity {
 
         Intent i = getIntent();
         quantidades = i.getIntegerArrayListExtra("quantidades");
-        perfil = i.getStringExtra("perfil");
+        perfis = i.getStringArrayListExtra("perfis");
 
         setMegaToPerfil();
 
@@ -125,51 +126,12 @@ public class ResultScreen extends AppCompatActivity {
     }
 
     private void setMegaToPerfil() {
-        txtPerfil.setText("Perfil: " + perfil);
-        if (perfil.equals("Home Office")){
-            Answer resposta = new Answer();
-            resposta.setKey("Home Office");
-            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_HOMEOFFICE);
-            total += Constantes.QUANTIDADE_MEGA_PARA_HOMEOFFICE;
-            listaResposta.add(resposta);
-        } else if (perfil.equals("Gamer")) {
-            Answer resposta = new Answer();
-            resposta.setKey("Gamer");
-            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_GAMES);
-            total += Constantes.QUANTIDADE_MEGA_PARA_GAMES;
-            listaResposta.add(resposta);
-        } else if (perfil.equals("Casual")) {
-            Answer resposta = new Answer();
-            resposta.setKey("Casual");
-            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_REDE_SOCIAIS);
-            total += Constantes.QUANTIDADE_MEGA_PARA_REDE_SOCIAIS;
-            listaResposta.add(resposta);
-        } else if (perfil.equals("Stremer")) {
-            Answer resposta = new Answer();
-            resposta.setKey("Stremer");
-            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_STREMAR);
-            total += Constantes.QUANTIDADE_MEGA_PARA_STREMAR;
-            listaResposta.add(resposta);
-        } else if (perfil.equals("Comerciante")) {
-            Answer resposta = new Answer();
-            resposta.setKey("Comerciante");
-            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_COMERCIANTE);
-            total += Constantes.QUANTIDADE_MEGA_PARA_COMERCIANTE;
-            listaResposta.add(resposta);
-        }
-        else if (perfil.equals("Redes Sociais")) {
-            Answer resposta = new Answer();
-            resposta.setKey("Redes Sociais");
-            resposta.setValue(Constantes.QUANTIDADE_MEGA_PARA_REDE_SOCIAIS);
-            total += Constantes.QUANTIDADE_MEGA_PARA_REDE_SOCIAIS;
-            listaResposta.add(resposta);
-        }
+
     }
 
     private void initializeComponents() {
         txtNotFound = findViewById(R.id.txtNotFound);
         btnReiniciar = findViewById(R.id.btnReiniciar);
-        txtPerfil = findViewById(R.id.txtPerfil);
         tickerView = findViewById(R.id.txtResult);
         tickerView.setAnimationDuration(1500);
         recyclerViewRespostas = findViewById(R.id.recyclerViewRespostas);

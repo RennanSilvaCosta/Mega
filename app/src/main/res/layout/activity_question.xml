@@ -29,9 +29,9 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginRight="8dp"
                 android:fontFamily="sans-serif-light"
-                android:textSize="18sp"
                 android:text="@string/first_question"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -99,9 +99,9 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginRight="8dp"
                 android:fontFamily="sans-serif-light"
-                android:textSize="18sp"
                 android:text="@string/second_question"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -169,9 +169,9 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginRight="8dp"
                 android:fontFamily="sans-serif-light"
-                android:textSize="18sp"
                 android:text="@string/third_question"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -239,9 +239,9 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="sans-serif-light"
-                android:textSize="18sp"
                 android:text="@string/fourth_question"
                 android:textColor="#FFFFFF"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -541,73 +541,86 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <RadioGroup
-                android:id="@+id/radioGroupEighth"
+
+            <CheckBox
+                android:id="@+id/checkbox_homeoffice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView">
+                android:buttonTint="@color/design_default_color_primary"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/eighth_question_first_alternative"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="@color/purple_500"
+                android:textColorLink="@color/purple_200" />
 
-                <RadioButton
-                    android:id="@+id/first_alternative"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/design_default_color_primary"
-                    android:checked="true"
-                    android:text="@string/eighth_question_first_alternative"
-                    android:textColor="#FFFFFF"
-                    android:textColorHighlight="@color/purple_500"
-                    android:textColorLink="@color/purple_200" />
+            <CheckBox
+                android:id="@+id/checkbox_gamer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="@color/design_default_color_primary"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/eighth_question_second_alternative"
+                android:textColor="#FFFFFF" />
 
-                <RadioButton
-                    android:id="@+id/second_alternative"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/design_default_color_primary"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="@string/eighth_question_second_alternative"
-                    android:textColor="#FFFFFF" />
+            <CheckBox
+                android:id="@+id/checkbox_streming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="@color/design_default_color_primary"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/eighth_question_third_alternative"
+                android:textColor="#FFFFFF" />
 
-                <RadioButton
-                    android:id="@+id/third_alternative"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/design_default_color_primary"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="@string/eighth_question_third_alternative"
-                    android:textColor="#FFFFFF" />
+            <CheckBox
+                android:id="@+id/checkbox_stremer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="@color/design_default_color_primary"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/eighth_question_fourth_alternative"
+                android:textColor="#FFFFFF" />
 
-                <RadioButton
-                    android:id="@+id/fourth_alternative"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/design_default_color_primary"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="@string/eighth_question_fourth_alternative"
-                    android:textColor="#FFFFFF" />
+            <CheckBox
+                android:id="@+id/checkbox_comercio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="@color/design_default_color_primary"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/eighth_question_fifth_alternative"
+                android:textColor="#FFFFFF" />
 
-                <RadioButton
-                    android:id="@+id/fifth_alternative"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/design_default_color_primary"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="@string/eighth_question_fifth_alternative"
-                    android:textColor="#FFFFFF" />
+            <CheckBox
+                android:id="@+id/checkbox_redes_sociais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="@color/design_default_color_primary"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/eight_question_sixth_alternative"
+                android:textColor="#FFFFFF" />
 
-                <RadioButton
-                    android:id="@+id/sixth_alternative"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/design_default_color_primary"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="@string/eight_question_sixth_alternative"
-                    android:textColor="#FFFFFF" />
-            </RadioGroup>
+            <CheckBox
+                android:id="@+id/checkbox_estudante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="@color/design_default_color_primary"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/eight_question_seventh_alternative"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btnCalcular"

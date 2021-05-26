@@ -14,15 +14,18 @@ public class Constantes {
     public static final int QUANTIDADE_MEGA_PARA_STREMING = 30;
     public static final int QUANTIDADE_MEGA_PARA_STREMAR = 50;
     public static final int QUANTIDADE_MEGA_PARA_COMERCIANTE = 15;
+    public static final int QUANTIDADE_MEGA_PARA_ESTUDANTE = 15;
 
 
     //perfis de clientes
     public static final String PERFIL_COMERCIANTE = "Comerciante";
     public static final String PERFIL_GAMER = "Gamer";
+    public static final String PERFIL_STREMING = "Streming";
     public static final String PERFIL_STREMER = "Stremer";
     public static final String PERFIL_HOMEOFFICE = "Home Office";
     public static final String PERFIL_CASUAL = "Casual";
     public static final String PERFIL_REDE_SOCIAIS = "Redes Sociais";
+    public static final String PERFIL_ESTUDANTE = "Estudante";
 
     //devices
     public static final String DEVICE_TELEVISAO = "televisao";
