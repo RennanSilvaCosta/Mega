@@ -129,8 +129,23 @@ public class ResultScreen extends AppCompatActivity {
     }
 
     private void setMegaToPerfil() {
-
-
+        for (String perfil : perfis) {
+            if (perfil.equals("Comerciante")) {
+                total += Constantes.QUANTIDADE_MEGA_PARA_COMERCIANTE;
+            } else if (perfil.equals("Gamer")) {
+                total += Constantes.QUANTIDADE_MEGA_PARA_GAMES;
+            } else if (perfil.equals("Streming")) {
+                total += Constantes.QUANTIDADE_MEGA_PARA_STREMING;
+            } else if (perfil.equals("Stremer")) {
+                total += Constantes.QUANTIDADE_MEGA_PARA_STREMAR;
+            } else if (perfil.equals("Home Office")) {
+                total += Constantes.QUANTIDADE_MEGA_PARA_HOMEOFFICE;
+            } else if (perfil.equals("Redes Sociais")) {
+                total += Constantes.QUANTIDADE_MEGA_PARA_REDE_SOCIAIS;
+            } else if (perfil.equals("Estudante")) {
+                total += Constantes.QUANTIDADE_MEGA_PARA_ESTUDANTE;
+            }
+        }
     }
 
     private void initializeComponents() {

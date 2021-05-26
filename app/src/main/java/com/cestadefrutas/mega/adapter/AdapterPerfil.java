@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cestadefrutas.mega.R;
-import com.cestadefrutas.mega.util.Constantes;
 import com.github.islamkhsh.CardSliderAdapter;
 
 import java.util.List;
@@ -46,7 +45,6 @@ public class AdapterPerfil extends CardSliderAdapter<AdapterPerfil.MovieViewHold
         String perfil = perfils.get(i);
         movieViewHolder.txtResume.setText(perfil);
         if (perfil.equals("Comerciante")) {
-            //TODO: alterar icones
             movieViewHolder.img.setImageResource(R.drawable.ic_perfil_comerciante);
             movieViewHolder.txtDescricao.setText("Para o seu comercio recomendamos " + QUANTIDADE_MEGA_PARA_COMERCIANTE + " Megas");
         } else if (perfil.equals("Gamer")) {
