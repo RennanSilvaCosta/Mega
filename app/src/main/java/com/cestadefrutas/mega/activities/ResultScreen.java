@@ -53,10 +53,10 @@ public class ResultScreen extends AppCompatActivity {
 
         populateListForRecyclerView();
 
-        tickerView.setText(String.valueOf(total));
-
         initializeCardSlider();
         initializeRecycler();
+
+        tickerView.setText(String.valueOf(total));
 
         btnReiniciar.setOnClickListener(new View.OnClickListener() {
             @Override

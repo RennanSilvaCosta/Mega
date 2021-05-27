@@ -8,17 +8,6 @@
     android:background="@drawable/background_degrade"
     tools:context=".activities.ResultScreen">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="158dp"
-        android:forceHasOverlappingRendering="false"
-        android:foreground="@drawable/background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.robinhood.ticker.TickerView
         android:id="@+id/txtResult"
         android:layout_width="0dp"
@@ -27,6 +16,7 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
+        android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -66,13 +56,13 @@
 
     <Button
         android:id="@+id/btnReiniciar"
-        android:layout_width="75dp"
-        android:layout_height="85dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_marginTop="32dp"
+        android:background="@drawable/button_round"
         android:text="@string/btn_result_screen"
-        android:textAllCaps="false"
+        android:textAllCaps="true"
         android:textSize="12sp"
-        app:cornerRadius="500dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />

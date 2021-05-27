@@ -6,7 +6,7 @@
     //buttons
     <string name="btn_main_screen">Iniciar</string>
     <string name="btn_question_screen">calcular</string>
-    <string name="btn_result_screen">iniciar</string>
+    <string name="btn_result_screen">responder novamente</string>
     
     //text fixed in result screen
     <string name="txt_result_mega">Megas sugeridos</string>

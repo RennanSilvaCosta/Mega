@@ -630,6 +630,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/button_round"
                 android:gravity="center"
                 android:text="@string/btn_question_screen"
                 app:layout_constraintBottom_toBottomOf="parent"
