@@ -11,8 +11,8 @@ Basta responder algumas perguntas, e o aplicativo irá informar a quantidade de 
 com base na quantidade de aparelhos que consomem internet, no tamanho da residencia e no perfil do cliente.
 
 <span>
-  <img src="https://media.giphy.com/media/fTkLpBW2meReiUKNlI/giphy.gif">
-  <img src="https://media.giphy.com/media/9xouflBv0Uj1TrNjQF/giphy.gif">
+  <img src="https://media.giphy.com/media/yUBdyJu9x888Skg1uw/giphy.gif">
+  <img src="https://media.giphy.com/media/Tcj4j61MbAW7JIC7OJ/giphy.gif">
 </span>
 
 ## :hammer_and_wrench: Tecnologias e ferramentas utilizadas :hammer_and_wrench:
@@ -21,4 +21,5 @@ com base na quantidade de aparelhos que consomem internet, no tamanho da residen
 * Genymotion (simulação)
  
 ## :books: Bibliotecas utilizadas :books:
-* Ticker (https://github.com/robinhood/ticker)
+* [Ticker View - RobinHood](https://github.com/robinhood/ticker)
+* [CardSlider - Islam Khaled](https://github.com/IslamKhSh/CardSlider)
